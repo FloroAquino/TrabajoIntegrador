@@ -1,0 +1,242 @@
+:root{
+    --bgcolor: #353A40;
+    --textcolor: white;
+    --bgbotton: #29A744;
+
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+p{
+    font-size: 14px;
+}
+
+header{
+    background: var(--bgcolor);
+    height: 5em;
+    width: 100wh;
+    color: var(--textcolor);
+    
+    .logo {
+    
+        display: inline-block;
+        margin: 0;
+    
+        & img {
+        height: 4em;
+        vertical-align: middle;
+        }    
+        & h2{ 
+        display: inline-block;  
+        font-size: 22px;
+        }
+    }
+    
+    .nav {
+        
+        float:right;
+        padding: 0.5em 0;
+      
+        & a{
+        margin: 5px;
+        text-decoration: none;
+        color: var(--textcolor);
+    
+        }
+        .ticket{
+            color: var(--bgbotton);
+            cursor: pointer;
+        }
+    }
+}    
+main{
+    .principal{
+        position: relative;
+        & img { 
+            width: 100wh;
+            filter: brightness(0.5);
+        
+        }
+    
+
+        #content-principal{
+        width: 40%;
+        position: absolute;
+        top: 50vh;
+        color: var(--textcolor);
+        text-align: right;
+        right: 4em;
+        line-height: 1.5em;
+        
+            & p, h2 {
+                margin: 1.5em 0;
+            }
+        
+        }
+   
+        .bton-quiero-ser{
+        text-decoration: none;
+        border: 1px solid var(--textcolor);
+        border-radius: 5px;
+        color: var(--textcolor);
+        padding: 10px 15px;
+        margin: 4px 4px;
+        cursor: pointer;
+
+        }
+        .bton-comprar-tkts{
+        text-decoration: none;
+        border: 1px solid var(--textcolor);
+        background: var(--bgbotton);
+        border-radius: 5px;
+        color: var(--textcolor);
+        padding: 10px 15px;
+        margin 4px 4px;
+        cursor: pointer;
+
+        }
+    }
+}
+
+#oradores{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    margin: 4em 4em;
+        /* & div{
+        display: inline-block;
+        
+            & h2{
+                
+                text-align: center;
+            }
+                & img{
+                margin: 15px;
+                width: 25em;
+                height: 25em;
+                border: 4px solid #353A40;
+            }
+        } */
+}
+
+.lugar{
+    display:flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    align-items: stretch;
+    margin-top: 3em;
+    .item-1{
+        /* border: 0.5px solid var(--textcolor); */
+        & img{
+        width: 100%;
+        height: 100%;
+        }
+    } 
+    .item-2{
+        background-color: var(--bgcolor);
+        color: var(--textcolor);
+        /* border: 0.5px solid var(--textcolor); */
+        padding: 1em;
+        line-height: 1.5em;
+        text-align: left;
+            & p {
+                font-size: 14px;
+                margin: 1.5em 0;
+            }
+            & h3 {
+               font-size: 18px;
+                color: var(--textcolor);
+            } 
+    }
+    .bton-conoce-mas {
+        text-decoration: none;
+        font-size: 14px;
+        border: 1px solid var(--textcolor);
+        border-radius: 5px;
+        color: var(--textcolor);
+        padding: 10px 15px;
+        cursor: pointer;
+        
+    }
+    
+    /* & h3 {
+        color: var(--textcolor);
+    }  */
+}
+
+footer{
+    background: var(--bgcolor);
+    width: 100wh;
+    height: 3em;
+    margin: 0 0;
+    padding: 0;
+    & a{
+        text-decoration: none;
+        position: relative;
+        color: var(--textcolor);
+        font: 10px;
+        padding: 1.5em 2em;
+        
+    }
+}
+
+    #form-register{
+        margin: 0 auto;
+        position: relative;
+        display: grid;
+        direction: column;
+        justify-content: center; 
+        /* width: 300px;
+        height: 20vh;  */
+        flex: row nowrap;
+        padding: 2em;
+        /* display:flexbox;
+        box-sizing: border-box; */
+        
+
+        .titulo {
+        
+            display: flex;
+            flex-direction: column;
+            margin: 2px 2px;
+        
+            & p, h4 {
+                text-align: center;
+                padding: 0.5px 0.5px;
+
+            }
+        }
+        
+        .datos{
+            box-sizing: border-box;
+            
+        
+            .control{
+            
+                width: 90%;
+                
+                justify-content: space-around;
+                
+                margin-bottom: 5px;
+            }
+
+            .hablar{
+        
+                width: 90%;
+                height: 150px;
+                               
+            }
+        }
+        .enviar{
+            width: 90%;
+            margin-top: 5px;
+            margin-bottom: 5px;
+            text-align: center;
+            background-color: var(--bgbotton);
+            color: var(--textcolor);
+            cursor: pointer;
+        }
+    }    
+
