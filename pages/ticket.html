@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>comprar ticket</title>
+    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="../style.css">
+
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="/asset/img/codoacodo.png" alt="Imagen Logo">
+            <h2>Conf Bs. As.</h2>
+        </div>
+        
+        <div class="nav">
+            <nav class="nav">
+                <a href="#"> La Conferencia</a>
+                <a href="#oradores"> Los Oradorpedido{
+                  display: flex;
+                  flex-direction: row;
+              }es</a>
+                <a href="#lugar"> El Lugar y la fecha</a>
+                <a href="#conviertete"> Conviertete en Orador</a>
+                <a class="ticket" href="./pages/ticket.html"> Comprar Tickets</a>
+        </nav>
+        </div>
+    </header>
+     
+    <main class="FormTicket">
+
+    
+           <div class="container">
+            <div class="cardcdo">
+                <h2>ESTUDIANTE</h2>
+                <p>Tienen un descuento</p> 
+                 <p> 80%</p>
+                <p> *presentar documentacion</p>
+            </div>
+    
+            <div class="cardcdo">
+                <h2>TRAINEE</h2>
+                <p>Tienen un descuento</p>
+                <p> 50%</p>
+                <p> *presentar documentacion</p>
+            </div>
+    
+            <div class="cardcdo">
+                <h2>Junior</h2>
+                <p>Tienen un descuento</p>
+                <p> 15%</p>
+                <p> *presentar documentacion</p>
+            </div>
+        </div>
+    
+        <div class="venta">
+            <p>VENTA</p>
+            <h1 id="cticket">VALOR DE TICKET $200</h1>
+        </div>
+
+    <table>
+        <tr>
+            <td>Nombre:</td>
+            <td><input type="text" id="nombre" placeholder="Nombre"></td>
+            <td>Apellido:</td>
+            <td><input type="text" id="apellido" placeholder="Apellido"></td>
+        </tr>
+        <tr>
+            <td>Correo Electrónico:</td>
+            <td colspan="3"><input type="email" id="mail" placeholder="Correo electrónico"></td>
+        </tr>
+        <tr>
+            <td>Cantidad de Entradas:</td>
+            <td><input type="number" id="cantidadEntradas" placeholder="Cantidad de Entradas"></td>
+            <td>Categoría:</td>
+            <td>
+                <select id="categoria">
+                    <option value="general">General</option>
+                    <option value="estudiante">Estudiante (80% de descuento)</option>
+                    <option value="trainee">Trainee (50% de descuento)</option>
+                    <option value="junior">Junior (15% de descuento)</option>
+                </select>
+            </td>
+        </tr>
+    </table>
+    
+    <button onclick="calcularTotal()">Calcular Total</button>
+
+    <p id="total" style="text-align: center; margin-top: 20px;"></p>
+
+    <div style="text-align: center; margin-top: 20px;">
+        <button style="margin-right: 10px;" onclick="borrarDatos()">Borrar</button>
+        <button onclick="mostrarResumen()">Resumen</button>
+    </div>
+  
+    </main> 
+
+
+
+    <footer>
+        <a href="#Preguntas"> Preguntas Frecuentes</a>
+        <a href="#Contactenos"> Contactenos</a>
+        <a href="#Press"> Prensa</a>
+        <a href="#Conferences"> Conferencias</a>
+        <a href="#Terms"> Terminos y Condiciones</a>
+        <a href="#Privacy">Privacidad</a>
+        <a href="#Estudiantes"> Estudiantes</a>
+
+    </footer>
+    <script src="../js/main.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+
+</body>
+</html>

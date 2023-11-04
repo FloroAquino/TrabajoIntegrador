@@ -8,8 +8,9 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-
+    
 }
+
 p{
     font-size: 14px;
 }
@@ -94,7 +95,6 @@ main{
         border-radius: 5px;
         color: var(--textcolor);
         padding: 10px 15px;
-        margin 4px 4px;
         cursor: pointer;
 
         }
@@ -161,9 +161,6 @@ main{
         
     }
     
-    /* & h3 {
-        color: var(--textcolor);
-    }  */
 }
 
 footer{
@@ -236,4 +233,64 @@ footer{
             cursor: pointer;
         }
     }    
+@media(max-width:00px){
+    /* body{
+        background-color: black;
+    } */
+   
+}
+/* @media(min-width: 240px){
+    
+    body{
+        background-color: red
+}
+} */
+
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    text-align: center;
+}
+
+.cardcdo {
+    border: 1px solid #ccc;
+    padding: 20px;
+    background-color: white;
+    height: 35vh;
+
+}
+h2 {
+    font-size: 24px; 
+}
+
+#cticket{
+    color: red;
+}
+p {
+    font-size: 18px;
+}
+
+.venta {
+    text-align: center;
+    margin-top: 20px;
+}
+
+table {
+    margin: 0 auto;
+        }
+td {
+            padding: 5px;
+        }
+button {
+            background-color: var(--bgbotton);
+            color: white;
+            padding: 10px 20px;
+            border: none;
+        }
+.TotPagar{
+    background-color: aqua;
+    width: auto;
+}
 
